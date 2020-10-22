@@ -1,7 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 header {
-  border: 1px solid red;
   width: 100vw;
-  height: 110px; }
+  height: 80px; }
   header .headerWrapper {
     border: 1px solid red;
     width: 80%;
@@ -13,14 +13,17 @@ header {
     flex-direction: row; }
     header .headerWrapper .headerWrapper__logo {
       border: 1px solid red;
-      width: 10%;
-      max-height: 95%; }
+      width: auto;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row; }
       header .headerWrapper .headerWrapper__logo img {
         width: 100%;
         height: auto; }
     header .headerWrapper .headerWrapper__nav {
-      width: 80%;
-      border: 1px solid red; }
+      width: 80%; }
       header .headerWrapper .headerWrapper__nav ul {
         list-style: none;
         display: flex;
@@ -29,12 +32,15 @@ header {
         flex-direction: row;
         padding: 0; }
         header .headerWrapper .headerWrapper__nav ul li a {
-          color: black;
-          text-decoration: none; }
+          text-decoration: none;
+          font-family: "Nunito", sans-serif;
+          font-weight: 900;
+          color: #445464;
+          font-size: 14px; }
         header .headerWrapper .headerWrapper__nav ul .headerWrapper__nav-item8,
         header .headerWrapper .headerWrapper__nav ul .headerWrapper__nav-item9 {
-          width: 30px;
-          height: 30px; }
+          width: 20px;
+          height: 20px; }
           header .headerWrapper .headerWrapper__nav ul .headerWrapper__nav-item8 a,
           header .headerWrapper .headerWrapper__nav ul .headerWrapper__nav-item9 a {
             width: 100%;
@@ -43,6 +49,49 @@ header {
             header .headerWrapper .headerWrapper__nav ul .headerWrapper__nav-item9 a img {
               width: 100%;
               height: 100%; }
+
+@media screen and (max-width: 1300px) {
+  header .headerWrapper {
+    width: 95%; } }
+
+main {
+  border: 1px solid blue;
+  width: 100vw;
+  height: calc(100vh - 100px); }
+
+footer {
+  border: 1px solid red;
+  width: 100vw;
+  height: 80px;
+  background-color: #282d33; }
+  footer .footerWrapper {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row; }
+    footer .footerWrapper ul {
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      list-style: none; }
+      footer .footerWrapper ul .footerWrapper-item1,
+      footer .footerWrapper ul .footerWrapper-item2 {
+        margin-right: 20px;
+        width: 20px;
+        height: 20px; }
+        footer .footerWrapper ul .footerWrapper-item1 a,
+        footer .footerWrapper ul .footerWrapper-item2 a {
+          width: 100%;
+          height: 100%; }
+          footer .footerWrapper ul .footerWrapper-item1 a img,
+          footer .footerWrapper ul .footerWrapper-item2 a img {
+            width: 100%;
+            height: 100%; }
 
 body {
   margin: 0; }
