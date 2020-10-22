@@ -2,16 +2,17 @@ header {
   // border: 1px solid red;
   width: 100vw;
   height: 80px;
+  overflow-x: hidden;
 
   & .headerWrapper{
-    border: 1px solid red;
+    // border: 1px solid red;
     width: 80%;
     height: 100%;
     margin: 0 auto;
     @include flexbox-basic(space-between);
 
     & .headerWrapper__logo{
-      border: 1px solid red;
+      // border: 1px solid red;
       width: auto;
       height: 100%;
       @include flexbox-basic();
