@@ -269,6 +269,71 @@ footer {
         .fiestaWrapper .fiestaWrapper__details .fiestaWrapper__details-options .fiestaWrapper__details-schedule img {
           margin: 0 20px; }
 
+.cafeteriaHome {
+  border: 1px solid red;
+  background-color: #445464;
+  width: 100vw; }
+
+.cafeteriaHomeWrapper {
+  border: 1px solid green;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; }
+  .cafeteriaHomeWrapper .cafeteriaHomeWrapper__video {
+    border: 1px solid red;
+    width: 50%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
+    .cafeteriaHomeWrapper .cafeteriaHomeWrapper__video > iframe {
+      width: 80%;
+      height: 300px; }
+  .cafeteriaHomeWrapper .cafeteriaHomeWrapper__details {
+    border: 1px solid orange;
+    width: 50%;
+    height: 100%; }
+    .cafeteriaHomeWrapper .cafeteriaHomeWrapper__details .cafeteriaHomeWrapper__details-title h2 {
+      color: white;
+      font-size: 3rem; }
+    .cafeteriaHomeWrapper .cafeteriaHomeWrapper__details .cafeteriaHomeWrapper__details-description p {
+      color: white;
+      font-size: 1.5rem; }
+    .cafeteriaHomeWrapper .cafeteriaHomeWrapper__details .cafeteriaHomeWrapper__details-more {
+      padding: 10px 25px;
+      border-radius: 20px;
+      outline: none;
+      border: none;
+      margin-bottom: 15px;
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+      background-color: #ff9d6c;
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1)); }
+    .cafeteriaHomeWrapper .cafeteriaHomeWrapper__details .cafeteriaHomeWrapper__details-options {
+      border: 1px solid red;
+      margin-top: 50px;
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row; }
+      .cafeteriaHomeWrapper .cafeteriaHomeWrapper__details .cafeteriaHomeWrapper__details-options .cafeteriaHomeWrapper__details-menu,
+      .cafeteriaHomeWrapper .cafeteriaHomeWrapper__details .cafeteriaHomeWrapper__details-options .cafeteriaHomeWrapper__details-wordking {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        color: white;
+        font-size: 1.2rem; }
+        .cafeteriaHomeWrapper .cafeteriaHomeWrapper__details .cafeteriaHomeWrapper__details-options .cafeteriaHomeWrapper__details-menu img,
+        .cafeteriaHomeWrapper .cafeteriaHomeWrapper__details .cafeteriaHomeWrapper__details-options .cafeteriaHomeWrapper__details-wordking img {
+          margin: 0 20px; }
+
 body {
   margin: 0;
   width: 100vw;
