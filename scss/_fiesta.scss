@@ -1,0 +1,65 @@
+.fiesta{
+  // border: 1px solid red;
+  width: 100vw;
+  background-image: url('../assets/images/fiestasFdo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 140px 0;
+}
+
+.fiestaWrapper{
+  // border: 1px solid red;
+  width: 80%;
+  margin: auto;
+
+  & .fiestaWrapper__details{
+    // border: 1px solid green;
+    width: 50%;
+    @include flexbox-basic(center,flex-end,column);
+
+    & .fiestaWrapper__details-title{
+      // border: 1px solid black;
+      color: white;
+      font-size: 3.5rem;
+    }
+    & .fiestaWrapper__details-decorate{
+      // border: 1px solid black;
+      width: 75%;
+      & img{
+        width: 100%;
+      }
+    }
+    & .fiestaWrapper__details-description{
+      // border: 1px solid black;
+      color: white;
+      font-size: 2rem;
+      text-align: right;
+    }
+    & .fiestaWrapper__details-moreInformation{
+      padding: 10px 25px;
+      border-radius: 20px;
+      outline: none;
+      border: none;
+      margin-bottom: 15px;
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+      background-color: #77a4dc;
+      background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.1) 50%,rgba(0,0,0,.1));
+    }
+    & .fiestaWrapper__details-options{
+      // border: 1px solid black;
+      width: 70%;
+      @include flexbox-basic(flex-start);
+      & .fiestaWrapper__details-images,
+      & .fiestaWrapper__details-schedule{
+        @include flexbox-basic();
+        color: white;
+        font-size: 1.2rem;
+        & img{
+          margin: 0 20px;
+        }
+      }
+    }
+  }
+}

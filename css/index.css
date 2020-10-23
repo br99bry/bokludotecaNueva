@@ -130,6 +130,145 @@ footer {
       width: 100%;
       height: 100%; }
 
+.ludoteca {
+  width: 100vw;
+  background-image: url("../assets/images/fdoNosotros.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0; }
+
+.ludotecaWrapper {
+  width: 80%;
+  margin: auto; }
+  .ludotecaWrapper .ludotecaWrapper__details {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column; }
+    .ludotecaWrapper .ludotecaWrapper__details .ludotecaWrapper__details-title {
+      color: white;
+      font-size: 3.5rem; }
+    .ludotecaWrapper .ludotecaWrapper__details .lodutecaWrapper__details-decorate {
+      width: 75%; }
+      .ludotecaWrapper .ludotecaWrapper__details .lodutecaWrapper__details-decorate img {
+        width: 100%; }
+    .ludotecaWrapper .ludotecaWrapper__details .lodutecaWrapper__details-description {
+      color: white;
+      font-size: 2rem;
+      text-align: right; }
+    .ludotecaWrapper .ludotecaWrapper__details .ludotecaWrapper__details-moreInformation {
+      padding: 10px 25px;
+      border-radius: 20px;
+      outline: none;
+      border: none;
+      margin-bottom: 15px;
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+      background-color: #77a4dc;
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1)); }
+    .ludotecaWrapper .ludotecaWrapper__details .ludotecaWrapper__details-options {
+      width: 70%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row; }
+      .ludotecaWrapper .ludotecaWrapper__details .ludotecaWrapper__details-options .ludotecaWrapper__details-images,
+      .ludotecaWrapper .ludotecaWrapper__details .ludotecaWrapper__details-options .ludotecaWrapper__details-schedule {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        color: white;
+        font-size: 1.2rem; }
+        .ludotecaWrapper .ludotecaWrapper__details .ludotecaWrapper__details-options .ludotecaWrapper__details-images img,
+        .ludotecaWrapper .ludotecaWrapper__details .ludotecaWrapper__details-options .ludotecaWrapper__details-schedule img {
+          margin: 0 20px; }
+
+.motivationalSentence {
+  width: 100vw;
+  position: relative;
+  object-fit: cover;
+  background-color: #efa582; }
+  .motivationalSentence .motivationalSentence__bg {
+    width: 100%;
+    height: 100%; }
+
+.motivationalSentenceWrapper {
+  width: 70%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; }
+  .motivationalSentenceWrapper .motivationalSentenceWrapper__title {
+    width: 70%; }
+    .motivationalSentenceWrapper .motivationalSentenceWrapper__title h2 {
+      margin-top: 0;
+      text-align: right;
+      color: white;
+      font-size: 4rem; }
+
+.fiesta {
+  width: 100vw;
+  background-image: url("../assets/images/fiestasFdo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 140px 0; }
+
+.fiestaWrapper {
+  width: 80%;
+  margin: auto; }
+  .fiestaWrapper .fiestaWrapper__details {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column; }
+    .fiestaWrapper .fiestaWrapper__details .fiestaWrapper__details-title {
+      color: white;
+      font-size: 3.5rem; }
+    .fiestaWrapper .fiestaWrapper__details .fiestaWrapper__details-decorate {
+      width: 75%; }
+      .fiestaWrapper .fiestaWrapper__details .fiestaWrapper__details-decorate img {
+        width: 100%; }
+    .fiestaWrapper .fiestaWrapper__details .fiestaWrapper__details-description {
+      color: white;
+      font-size: 2rem;
+      text-align: right; }
+    .fiestaWrapper .fiestaWrapper__details .fiestaWrapper__details-moreInformation {
+      padding: 10px 25px;
+      border-radius: 20px;
+      outline: none;
+      border: none;
+      margin-bottom: 15px;
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+      background-color: #77a4dc;
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1)); }
+    .fiestaWrapper .fiestaWrapper__details .fiestaWrapper__details-options {
+      width: 70%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row; }
+      .fiestaWrapper .fiestaWrapper__details .fiestaWrapper__details-options .fiestaWrapper__details-images,
+      .fiestaWrapper .fiestaWrapper__details .fiestaWrapper__details-options .fiestaWrapper__details-schedule {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        color: white;
+        font-size: 1.2rem; }
+        .fiestaWrapper .fiestaWrapper__details .fiestaWrapper__details-options .fiestaWrapper__details-images img,
+        .fiestaWrapper .fiestaWrapper__details .fiestaWrapper__details-options .fiestaWrapper__details-schedule img {
+          margin: 0 20px; }
+
 body {
   margin: 0;
   width: 100vw;

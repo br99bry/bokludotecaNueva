@@ -1,0 +1,65 @@
+.ludoteca{
+  // border: 1px solid red;
+  width: 100vw;
+  background-image: url('../assets/images/fdoNosotros.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+
+.ludotecaWrapper{
+  // border: 1px solid red;
+  width: 80%;
+  margin: auto;
+
+  & .ludotecaWrapper__details{
+    // border: 1px solid green;
+    width: 50%;
+    @include flexbox-basic(center,flex-end,column);
+
+    & .ludotecaWrapper__details-title{
+      // border: 1px solid black;
+      color: white;
+      font-size: 3.5rem;
+    }
+    & .lodutecaWrapper__details-decorate{
+      // border: 1px solid black;
+      width: 75%;
+      & img{
+        width: 100%;
+      }
+    }
+    & .lodutecaWrapper__details-description{
+      // border: 1px solid black;
+      color: white;
+      font-size: 2rem;
+      text-align: right;
+    }
+    & .ludotecaWrapper__details-moreInformation{
+      padding: 10px 25px;
+      border-radius: 20px;
+      outline: none;
+      border: none;
+      margin-bottom: 15px;
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+      background-color: #77a4dc;
+      background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.1) 50%,rgba(0,0,0,.1));
+    }
+    & .ludotecaWrapper__details-options{
+      // border: 1px solid black;
+      width: 70%;
+      @include flexbox-basic(flex-start);
+      & .ludotecaWrapper__details-images,
+      & .ludotecaWrapper__details-schedule{
+        @include flexbox-basic();
+        color: white;
+        font-size: 1.2rem;
+        & img{
+          margin: 0 20px;
+        }
+      }
+    }
+  }
+}
