@@ -55,11 +55,116 @@ header {
         }
       }
     }
+
+    & .headerWrapper__navMobile{
+      border: 1px solid orange;
+      width: 8%;
+      height: 100%;
+      display: none;
+
+    }
+  }
+}
+
+.headerWrapper__navMobile-menu{
+  // border: 1px solid red;
+  width: 30%;
+  @include flexbox-basic(center,center,column);
+  position: absolute;
+  top: -500px;
+  right: 0;
+  z-index: 2;
+  padding: 20px 0px 0px 0px;
+  background-color: white;
+  border-bottom-left-radius: 20px;
+  box-shadow: -8px 8px 5px 0px rgba(68,84,100,0.57);
+
+  
+
+  & .headerWrapper__navMobile-cross{
+    // border: 1px solid red;
+    width: 90%;
+    cursor: pointer;
+    margin-bottom: 20px;
+    @include flexbox-basic(flex-end);
+    & .icon-cancel-circle{
+      font-size: 1.5rem;
+    }
+  }
+
+  & ul{
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    & li{
+      margin-bottom: 15px;
+      & a{
+        text-decoration: none;
+        font-family: $font-nunito;
+        font-weight: 900;
+        color: #445464;
+        font-size: 14px;
+      }
+    }
+    & .headerWrapper__nav-item8{
+      // border: 1px solid red;
+      & img{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        
+      }
+    }
   }
 }
 
 @media screen and (max-width: 1300px){
   header .headerWrapper{
     width: 95%;
+  }
+}
+
+@media screen and (max-width: 1150px){
+  header .headerWrapper .headerWrapper__navMobile{
+    display: block;
+    @include flexbox-basic(center);
+
+
+    & i{
+      border: 1px solid #445464;
+      font-size: 2rem;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      color: #445464;
+      &:hover{
+        transform: scale(0.8);
+        color: white;
+        background-color: rgb(83, 82, 82);
+      }
+    }
+  }
+  .menu-is-active{
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    transform: translateY(500px);
+  }
+  header .headerWrapper .headerWrapper__nav{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px){
+  .headerWrapper__navMobile-menu{
+    width: 50%;
+  }
+  header .headerWrapper .headerWrapper__navMobile{
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .headerWrapper__navMobile-menu{
+    width: 80%;
   }
 }

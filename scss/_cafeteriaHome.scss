@@ -34,6 +34,13 @@
       }
     }
 
+    & .cafeteriaHomeWrapper__details-decorate{
+      border: 1px solid red;
+      & img{
+        width: 80%;
+      }
+    }
+
     & .cafeteriaHomeWrapper__details-description{
       & p{
         color: white;
@@ -68,6 +75,7 @@
         font-size: 1.2rem;
         & img{
           margin: 0 20px;
+          cursor: pointer;
         }
       }
     }

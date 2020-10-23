@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="./assets/fonts/style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bokludoteca</title>
@@ -25,8 +26,31 @@
           <li class="headerWrapper__nav-item9"> <a href="#"> <img src="./assets/images/logoInstagram.svg"/> </a> </li>
         </ul>
       </div>
+      <!-- Mobile Menu -->
+      <div class="headerWrapper__navMobile">
+        <i class="icon-menu" id="burgerMenu" ></i>
+      </div>
     </div>
   </header>
+  <div id="menu" class="headerWrapper__navMobile-menu">
+    <div class="headerWrapper__navMobile-cross">
+      <i id="closeMenu" class="icon-cancel-circle"></i>
+    </div>
+    <ul>
+      <li class="headerWrapper__nav-item1"> <a href="#"> ¿QUIÉNES SOMOS? </a></li>
+      <li class="headerWrapper__nav-item2"> <a href="#"> LUDOTECA </a> </li>
+      <li class="headerWrapper__nav-item3"> <a href="#"> FIESTAS </a> </li>
+      <li class="headerWrapper__nav-item4"> <a href="#"> CALENDARIO </a> </li>
+      <li class="headerWrapper__nav-item5"> <a href="#"> TIENDA EN LÍNEA </a> </li>
+      <li class="headerWrapper__nav-item6"> <a href="#"> PAGA TU EVENTO </a> </li>
+      <li class="headerWrapper__nav-item7"> <a href="#"> CONTACTO </a> </li>
+      <li class="headerWrapper__nav-item8">
+         <a href="#"> <img src="./assets/images/logoFacebook.svg"/> </a>
+         <a href="#"> <img src="./assets/images/logoInstagram.svg"/> </a> 
+      </li>
+    </ul>
+  </div>
+      <!-- End Mobile Menu -->
   <main>
     <img src="./assets/images/slider.jpg" alt="">
   </main>
@@ -147,5 +171,6 @@
       </ul>
     </div>
   </footer>
+  <script src="./scripts/index.js"></script>
 </body>
 </html>
