@@ -29,6 +29,41 @@
       font-size: 4rem;
     }
   }
+}
 
+@media screen and (max-width: 1150px){
+  .motivationalSentence{
+    & .motivationalSentenceWrapper{
+      & .motivationalSentenceWrapper__title{
+        width: 100%;
+        & h2{
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+}
 
+@media screen and (max-width: 700px){
+  .motivationalSentence{
+    & .motivationalSentenceWrapper{
+      & .motivationalSentenceWrapper__title{
+        & h2{
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px){
+  .motivationalSentence{
+    & .motivationalSentenceWrapper{
+      & .motivationalSentenceWrapper__title{
+        & h2{
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
 }

@@ -2,7 +2,7 @@
   // border: 1px solid red;
   width: 100vw;
   background-image: url('../assets/images/fdoNosotros.jpg');
-  background-size: cover;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
   padding: 100px 0;
 }
@@ -58,6 +58,97 @@
         font-size: 1.2rem;
         & img{
           margin: 0 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1500px){
+  .ludoteca{
+    padding: 50px 0;
+    & .ludotecaWrapper{
+      & .ludotecaWrapper__details{
+        & .ludotecaWrapper__details-title{
+          margin-bottom: 5px;
+        }
+        & .lodutecaWrapper__details-description{
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .ludoteca{
+    & .ludotecaWrapper{
+      width: 90%;
+      & .ludotecaWrapper__details{
+        width: 70%;
+        & .ludotecaWrapper__details-title{
+          font-size: 2rem;
+        }
+        & .lodutecaWrapper__details-decorate{
+          width: 40%;
+        }
+        & .lodutecaWrapper__details-description{
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px){
+  .ludoteca{
+    background-size: cover;
+    & .ludotecaWrapper{
+      & .ludotecaWrapper__details{
+        width: 100%;
+        & .ludotecaWrapper__details-title{
+          font-size: 2rem;
+        }
+        & .lodutecaWrapper__details-decorate{
+          width: 50%;
+        }
+        & .lodutecaWrapper__details-description{
+          font-size: 1.5rem;
+        }
+        & .ludotecaWrapper__details-options{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px){
+  .ludoteca{
+    background-size: cover;
+    & .ludotecaWrapper{
+      & .ludotecaWrapper__details{
+        width: 90%;
+        align-items: center;
+        & .ludotecaWrapper__details-title{
+          font-size: 1.5rem;
+        }
+        & .lodutecaWrapper__details-decorate{
+          width: 50%;
+        }
+        & .lodutecaWrapper__details-description{
+          font-size: 1rem;
+          font-weight: bold;
+          text-align: center;
+        }
+
+        & .ludotecaWrapper__details-moreInformation{
+          font-size: 1rem;
+          padding: 5px 15px;
+        }
+        & .ludotecaWrapper__details-options{
+          width: 100%;
+          flex-direction: column;
         }
       }
     }

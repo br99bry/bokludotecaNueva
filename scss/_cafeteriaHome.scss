@@ -1,18 +1,18 @@
 .cafeteriaHome{
-  border: 1px solid red;
+  // border: 1px solid red;
   background-color: #445464;
   width: 100vw;
-
+  overflow: hidden;
 }
 
 .cafeteriaHomeWrapper{
-  border: 1px solid green;
+  // border: 1px solid green;
   width: 80%;
   margin: auto;
   @include flexbox-basic();
 
   & .cafeteriaHomeWrapper__video{
-    border: 1px solid red;
+    // border: 1px solid red;
     width: 50%;
     padding: 50px;
     @include flexbox-basic();
@@ -24,7 +24,7 @@
   }
 
   & .cafeteriaHomeWrapper__details{
-    border: 1px solid orange;
+    // border: 1px solid orange;
     width: 50%;
     height: 100%;
     & .cafeteriaHomeWrapper__details-title{
@@ -35,7 +35,7 @@
     }
 
     & .cafeteriaHomeWrapper__details-decorate{
-      border: 1px solid red;
+      // border: 1px solid red;
       & img{
         width: 80%;
       }
@@ -63,7 +63,7 @@
     }
 
     & .cafeteriaHomeWrapper__details-options{
-      border: 1px solid red;
+      // border: 1px solid red;
       margin-top: 50px;
       width: 100%;
       @include flexbox-basic(flex-start);
@@ -76,6 +76,81 @@
         & img{
           margin: 0 20px;
           cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1050px){
+  .cafeteriaHome{
+    & .cafeteriaHomeWrapper{
+      width: 85%;
+      flex-direction: column;
+      & .cafeteriaHomeWrapper__video{
+        width: 90%;
+      }
+
+      & .cafeteriaHomeWrapper__details{
+        width: 100%;
+        & .cafeteriaHomeWrapper__details-decorate{
+          & img{
+            width: 60%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px){
+  .cafeteriaHome{
+    & .cafeteriaHomeWrapper{
+      width: 85%;
+      flex-direction: column;
+      & .cafeteriaHomeWrapper__video{
+        width: 70%;
+      }
+
+      & .cafeteriaHomeWrapper__details{
+        width: 100%;
+        & .cafeteriaHomeWrapper__details-title{
+          & h2{
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+          }
+        }
+        & .cafeteriaHomeWrapper__details-description{
+          & p{
+            font-size: 1.3rem;
+          }
+        }
+        & .cafeteriaHomeWrapper__details-decorate{
+          & img{
+            width: 60%;
+          }
+        }
+        & .cafeteriaHomeWrapper__details-options{
+          margin: 0;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px){
+  .cafeteriaHome{
+    & .cafeteriaHomeWrapper{
+      width: 85%;
+      flex-direction: column;
+      & .cafeteriaHomeWrapper__video{
+        width: 100%;
+        padding: 0;
+        margin-top: 30px;
+        & iframe{
+          width: 100%;
         }
       }
     }
