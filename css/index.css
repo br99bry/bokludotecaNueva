@@ -717,12 +717,10 @@ footer {
   background-size: 100% 100%;
   background-repeat: no-repeat; }
   .contact .contactWrapper {
-    border: 1px solid red;
     width: 90%;
     margin: auto;
     height: 100%; }
     .contact .contactWrapper .contactWrapper__elements {
-      border: 1px solid orange;
       width: 50%;
       height: 100%; }
       .contact .contactWrapper .contactWrapper__elements .contactWrapper__elements-title {
@@ -736,34 +734,59 @@ footer {
         width: 100%; }
         .contact .contactWrapper .contactWrapper__elements .contactWrapper__elements-subtitle h4 {
           color: white;
-          font-size: 2rem; }
-      .contact .contactWrapper .contactWrapper__elements .contactWrapper__elements-form {
-        border: 1px solid black; }
-        .contact .contactWrapper .contactWrapper__elements .contactWrapper__elements-form * {
-          display: block; }
-        .contact .contactWrapper .contactWrapper__elements .contactWrapper__elements-form > input {
-          border: none;
-          width: 80%;
-          margin: 30px 0;
-          height: 40px;
-          padding-left: 10px;
-          background-color: #e7eef8;
-          color: #7c9fd7;
-          outline: none;
-          font-size: 1.2rem; }
-          .contact .contactWrapper .contactWrapper__elements .contactWrapper__elements-form > input::placeholder {
-            color: #7c9fd7; }
-        .contact .contactWrapper .contactWrapper__elements .contactWrapper__elements-form button {
-          padding: 10px 30px;
-          border-radius: 20px;
-          border: none;
-          background-color: #ff9d6c;
-          color: white;
-          font-size: 1.2rem;
-          cursor: pointer; }
+          font-size: 2rem;
+          margin: 10px 0 0 0; }
+      .contact .contactWrapper .contactWrapper__elements .contactWrapper__elements-form * {
+        display: block; }
+      .contact .contactWrapper .contactWrapper__elements .contactWrapper__elements-form > input {
+        border: none;
+        width: 80%;
+        margin: 30px 0;
+        height: 40px;
+        padding-left: 10px;
+        background-color: #e7eef8;
+        color: #7c9fd7;
+        outline: none;
+        font-size: 1.2rem; }
+        .contact .contactWrapper .contactWrapper__elements .contactWrapper__elements-form > input::placeholder {
+          color: #7c9fd7; }
+      .contact .contactWrapper .contactWrapper__elements .contactWrapper__elements-form button {
+        padding: 10px 30px;
+        border-radius: 20px;
+        border: none;
+        background-color: #ff9d6c;
+        color: white;
+        font-size: 1.2rem;
+        cursor: pointer; }
       .contact .contactWrapper .contactWrapper__elements .contactWrapper__elements-adress {
         color: white;
         font-size: 1.5em; }
+
+@media screen and (max-width: 1250px) {
+  .contact {
+    padding: 10px 0; }
+    .contact .contactWrapper {
+      width: 95%; }
+      .contact .contactWrapper .contactWrapper__elements .contactWrapper__elements-form > input {
+        width: 95%; } }
+
+@media screen and (max-width: 1000px) {
+  .contact {
+    padding-left: 20px;
+    margin: 0;
+    background-size: cover; }
+    .contact .contactWrapper {
+      width: 95%;
+      margin-left: 5%; }
+      .contact .contactWrapper .contactWrapper__elements {
+        width: 85%; } }
+
+@media screen and (max-width: 450px) {
+  .contact {
+    padding-left: 0; }
+    .contact .contactWrapper .contactWrapper__elements {
+      padding-left: 5%;
+      width: 95%; } }
 
 body {
   margin: 0;

@@ -7,13 +7,13 @@
   background-repeat: no-repeat;
 
   & .contactWrapper{
-    border: 1px solid red;
+    // border: 1px solid red;
     width: 90%;
     margin: auto;
     height: 100%;
 
     & .contactWrapper__elements{
-      border: 1px solid orange;
+      // border: 1px solid orange;
       width: 50%;
       height: 100%;
       & .contactWrapper__elements-title{
@@ -30,10 +30,11 @@
         & h4{
           color: white;
           font-size: 2rem;
+          margin: 10px 0 0 0;
         }
       }
       & .contactWrapper__elements-form{
-        border: 1px solid black;
+        // border: 1px solid black;
         & * {
           display: block;
         }
@@ -68,6 +69,49 @@
       & .contactWrapper__elements-adress{
         color: white;
         font-size: 1.5em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1250px){
+  .contact{
+    padding: 10px 0;
+    & .contactWrapper{
+      width: 95%;
+      & .contactWrapper__elements{
+        & .contactWrapper__elements-form{
+          & > input{
+            width: 95%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .contact{
+    padding-left: 20px;
+    margin: 0;
+    background-size: cover;
+    & .contactWrapper{
+      width: 95%;
+      margin-left: 5%;
+      & .contactWrapper__elements{
+        width: 85%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px){
+  .contact{
+    padding-left: 0;
+    & .contactWrapper{
+      & .contactWrapper__elements{
+        padding-left: 5%;
+        width: 95%;
       }
     }
   }
