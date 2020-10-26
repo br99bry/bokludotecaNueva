@@ -52,6 +52,9 @@ header {
       width: 8%;
       height: 100%;
       display: none; }
+      header .headerWrapper .headerWrapper__navMobile i {
+        user-select: none;
+        margin-right: 20%; }
 
 .headerWrapper__navMobile-menu {
   width: 30%;
@@ -149,8 +152,7 @@ main {
     flex-direction: row;
     position: absolute;
     color: white;
-    font-size: 3rem;
-    font-weight: bold;
+    font-size: 2.5rem;
     left: 3%;
     top: 45%;
     user-select: none; }
@@ -688,7 +690,8 @@ footer {
       .cafeteriaHome .cafeteriaHomeWrapper .cafeteriaHomeWrapper__details .cafeteriaHomeWrapper__details-options {
         margin: 0;
         flex-direction: column;
-        align-items: flex-start; } }
+        align-items: flex-start;
+        margin-bottom: 30px; } }
 
 @media screen and (max-width: 400px) {
   .cafeteriaHome .cafeteriaHomeWrapper {

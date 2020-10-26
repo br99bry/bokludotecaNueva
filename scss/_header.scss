@@ -61,7 +61,10 @@ header {
       width: 8%;
       height: 100%;
       display: none;
-
+      & i{
+        user-select: none;
+        margin-right: 20%;
+      }
     }
   }
 }
