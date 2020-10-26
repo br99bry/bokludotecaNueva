@@ -7,7 +7,7 @@ main{
   
   & .homeSlider__right,
   & .homeSlider__left{
-    // border: 1px solid red;
+    border: 1px solid red;
     width: 3%;
     height: 50px;
     cursor: pointer;
@@ -93,11 +93,15 @@ main{
 @media screen and (max-width: 1150px){
   main{
     & .homeSlider{
+      & .homeSlider__right,
+      & .homeSlider__left{
+        width: 40px;
+      }
       & .homeSlider__right{
-        left: 92%;
+        left: 88%;
       }
       & .homeSlider__left{
-        left: 7%;
+        left: 2%;
       }
       & > .homeSlider__item:nth-of-type(1),
       & > .homeSlider__item:nth-of-type(3),
@@ -137,13 +141,13 @@ main{
   main{
     & .homeSlider{
       & .homeSlider__right{
-        top: 3%;
+        top: 0%;
         left: 55%;
         font-size: 2rem;
       }
       & .homeSlider__left{
-        top: 3%;
-        left: 45%;
+        top: 0%;
+        left: 40%;
         font-size: 2rem;
       }
       & > .homeSlider__item:nth-of-type(1),

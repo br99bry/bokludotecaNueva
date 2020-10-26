@@ -140,6 +140,7 @@ main {
   position: relative; }
   main .homeSlider__right,
   main .homeSlider__left {
+    border: 1px solid red;
     width: 3%;
     height: 50px;
     cursor: pointer;
@@ -212,10 +213,13 @@ main {
           width: 90%; }
 
 @media screen and (max-width: 1150px) {
-  main .homeSlider .homeSlider__right {
-    left: 92%; }
+  main .homeSlider .homeSlider__right,
   main .homeSlider .homeSlider__left {
-    left: 7%; }
+    width: 40px; }
+  main .homeSlider .homeSlider__right {
+    left: 88%; }
+  main .homeSlider .homeSlider__left {
+    left: 2%; }
   main .homeSlider > .homeSlider__item:nth-of-type(1) div,
   main .homeSlider > .homeSlider__item:nth-of-type(3) div,
   main .homeSlider > .homeSlider__item:nth-of-type(5) div {
@@ -235,12 +239,12 @@ main {
 
 @media screen and (max-width: 500px) {
   main .homeSlider .homeSlider__right {
-    top: 3%;
+    top: 0%;
     left: 55%;
     font-size: 2rem; }
   main .homeSlider .homeSlider__left {
-    top: 3%;
-    left: 45%;
+    top: 0%;
+    left: 40%;
     font-size: 2rem; }
   main .homeSlider > .homeSlider__item:nth-of-type(1) div,
   main .homeSlider > .homeSlider__item:nth-of-type(3) div,
