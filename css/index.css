@@ -140,7 +140,6 @@ main {
   position: relative; }
   main .homeSlider__right,
   main .homeSlider__left {
-    border: 1px solid red;
     width: 3%;
     height: 50px;
     cursor: pointer;
