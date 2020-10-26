@@ -1,0 +1,74 @@
+.contact{
+  width: 100vw;
+  overflow: hidden;
+  padding: 50px 0;
+  background-image: url('../assets/images/fdoFooter.jpg');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  & .contactWrapper{
+    border: 1px solid red;
+    width: 90%;
+    margin: auto;
+    height: 100%;
+
+    & .contactWrapper__elements{
+      border: 1px solid orange;
+      width: 50%;
+      height: 100%;
+      & .contactWrapper__elements-title{
+        width: 100%;
+        & h2{
+          color: white;
+          font-size: 3rem;
+          margin-bottom: 0px;
+          margin-top: 0;
+        }
+      }
+      & .contactWrapper__elements-subtitle{
+        width: 100%;
+        & h4{
+          color: white;
+          font-size: 2rem;
+        }
+      }
+      & .contactWrapper__elements-form{
+        border: 1px solid black;
+        & * {
+          display: block;
+        }
+
+        & > input{
+          border: none;
+          width: 80%;
+          margin: 30px 0;
+          height: 40px;
+          padding-left: 10px;
+          background-color: #e7eef8;
+          color: #7c9fd7;
+          outline: none;
+          font-size: 1.2rem;
+          &::placeholder{
+            color: #7c9fd7;
+          }
+        }
+
+        & button{
+          padding: 10px 30px;
+          border-radius: 20px;
+          border: none;
+          background-color: #ff9d6c;
+          color: white;
+          font-size: 1.2rem;
+          cursor: pointer;
+        }
+        
+      }
+
+      & .contactWrapper__elements-adress{
+        color: white;
+        font-size: 1.5em;
+      }
+    }
+  }
+}

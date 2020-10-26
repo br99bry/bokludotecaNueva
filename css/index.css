@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap");
 header {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: white;
   width: 100vw;
   height: 80px;
   overflow-x: hidden; }
@@ -65,7 +69,7 @@ header {
   position: absolute;
   top: -500px;
   right: 0;
-  z-index: 2;
+  z-index: 4;
   padding: 20px 0px 0px 0px;
   background-color: white;
   border-bottom-left-radius: 20px;
@@ -120,6 +124,7 @@ header {
         color: white;
         background-color: #535252; }
   .menu-is-active {
+    position: fixed;
     transition-duration: 1s;
     transition-timing-function: ease-out;
     transform: translateY(500px); }
@@ -703,6 +708,62 @@ footer {
       margin-top: 30px; }
       .cafeteriaHome .cafeteriaHomeWrapper .cafeteriaHomeWrapper__video iframe {
         width: 100%; } }
+
+.contact {
+  width: 100vw;
+  overflow: hidden;
+  padding: 50px 0;
+  background-image: url("../assets/images/fdoFooter.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+  .contact .contactWrapper {
+    border: 1px solid red;
+    width: 90%;
+    margin: auto;
+    height: 100%; }
+    .contact .contactWrapper .contactWrapper__elements {
+      border: 1px solid orange;
+      width: 50%;
+      height: 100%; }
+      .contact .contactWrapper .contactWrapper__elements .contactWrapper__elements-title {
+        width: 100%; }
+        .contact .contactWrapper .contactWrapper__elements .contactWrapper__elements-title h2 {
+          color: white;
+          font-size: 3rem;
+          margin-bottom: 0px;
+          margin-top: 0; }
+      .contact .contactWrapper .contactWrapper__elements .contactWrapper__elements-subtitle {
+        width: 100%; }
+        .contact .contactWrapper .contactWrapper__elements .contactWrapper__elements-subtitle h4 {
+          color: white;
+          font-size: 2rem; }
+      .contact .contactWrapper .contactWrapper__elements .contactWrapper__elements-form {
+        border: 1px solid black; }
+        .contact .contactWrapper .contactWrapper__elements .contactWrapper__elements-form * {
+          display: block; }
+        .contact .contactWrapper .contactWrapper__elements .contactWrapper__elements-form > input {
+          border: none;
+          width: 80%;
+          margin: 30px 0;
+          height: 40px;
+          padding-left: 10px;
+          background-color: #e7eef8;
+          color: #7c9fd7;
+          outline: none;
+          font-size: 1.2rem; }
+          .contact .contactWrapper .contactWrapper__elements .contactWrapper__elements-form > input::placeholder {
+            color: #7c9fd7; }
+        .contact .contactWrapper .contactWrapper__elements .contactWrapper__elements-form button {
+          padding: 10px 30px;
+          border-radius: 20px;
+          border: none;
+          background-color: #ff9d6c;
+          color: white;
+          font-size: 1.2rem;
+          cursor: pointer; }
+      .contact .contactWrapper .contactWrapper__elements .contactWrapper__elements-adress {
+        color: white;
+        font-size: 1.5em; }
 
 body {
   margin: 0;

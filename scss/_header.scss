@@ -1,5 +1,9 @@
 header {
   // border: 1px solid red;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: white;
   width: 100vw;
   height: 80px;
   overflow-x: hidden;
@@ -76,7 +80,7 @@ header {
   position: absolute;
   top: -500px;
   right: 0;
-  z-index: 2;
+  z-index: 4;
   padding: 20px 0px 0px 0px;
   background-color: white;
   border-bottom-left-radius: 20px;
@@ -148,6 +152,7 @@ header {
     }
   }
   .menu-is-active{
+    position: fixed;
     transition-duration: 1s;
     transition-timing-function: ease-out;
     transform: translateY(500px);
