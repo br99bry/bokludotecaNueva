@@ -220,12 +220,12 @@
         <div class="contactWrapper__elements-subtitle">
           <h4>Déjanos tus datos y nos comunicaremos contigo.</h4>
         </div>
-        <form action="" class="contactWrapper__elements-form">
-          <input type="text" placeholder="Nombre(s)" class="contactWrapper__elements-name">
-          <input type="text" placeholder="Apellidos" class="contactWrapper__elements-lastNames">
-          <input type="text" placeholder="Correo electrónico" class="contactWrapper__elements-email">
-          <input type="text" placeholder="Teléfono" class="contactWrapper__elements-number">
-          <button class="contactWrapper__elements-send">Enviar</button>
+        <form action="./php/enviar.php" method="POST" class="contactWrapper__elements-form">
+          <input required name="nombre" type="text" placeholder="Nombre(s)" class="contactWrapper__elements-name">
+          <input required name="apellidos" type="text" placeholder="Apellidos" class="contactWrapper__elements-lastNames">
+          <input required name="correo" type="text" placeholder="Correo electrónico" class="contactWrapper__elements-email">
+          <input required name="telefono" type="text" placeholder="Teléfono" class="contactWrapper__elements-number">
+          <button type="submit" class="contactWrapper__elements-send">Enviar</button>
         </form>
         <div class="contactWrapper__elements-adress">
           <p>
