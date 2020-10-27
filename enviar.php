@@ -7,5 +7,5 @@
   $correo=$_POST["correo"];
   $contenido="Nombre: " . $nombre . "\nApellidos: " . $apellidos . "\nCorreo: " . $correo . "\nTelefono: " . $telefono;
   mail($destino,"Visitante Bokludoteca", $contenido);
-  header("Location:../index.html");
+  header("Location:index.html");
 ?>
