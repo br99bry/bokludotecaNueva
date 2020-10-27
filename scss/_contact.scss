@@ -1,7 +1,7 @@
 .contact{
   width: 100vw;
   overflow: hidden;
-  padding: 50px 0;
+  padding: 100px 0;
   background-image: url('../assets/images/fdoFooter.jpg');
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -109,8 +109,9 @@
   .contact{
     padding-left: 0;
     & .contactWrapper{
+      margin: 0;
       & .contactWrapper__elements{
-        padding-left: 5%;
+        padding-left: 2%;
         width: 95%;
       }
     }

@@ -1,0 +1,104 @@
+.hours{
+  // border: 1px solid red;
+  width: 100vw;
+  padding: 150px 0;
+  background-image: url('../assets/images/horariosLudoteca.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  overflow: hidden;
+
+  & .hoursWrapper{
+    width: 50%;
+    margin-left: 10%;
+    // border: 1px solid white;
+    & .hoursWrapper__hero{
+      // border: 1px solid green;
+      font-size: 3rem;
+      @include flexbox-basic(flex-start);
+      color: #445464;
+      margin: 0;
+      margin-bottom: 50px;
+      & img{
+        width: 80px;
+        height: 80px;
+        margin-right: 20px;
+      }
+    }
+
+    & .hoursWrapper__details{
+      // border: 1px solid red;
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: repeat(2,1fr);
+      grid-column-gap: 15px;
+      grid-row-gap: 15px;
+      margin-bottom: 80px;
+
+      & > div{
+        // border: 1px solid white;
+        padding: 0px 20px;
+        & > p{
+          color: white;
+          font-size: 1.3rem;
+          font-weight: bold;
+        }
+      }
+
+      & .hoursWrapper__details-item1,
+      & .hoursWrapper__details-item3{
+        background-color: #445464;
+      }
+
+      & .hoursWrapper__details-item2,
+      & .hoursWrapper__details-item4{
+        background-color: #77a4dc;
+      }
+    }
+
+    & .hoursWrapper__aditional{
+      & h2{
+        font-size: 2rem;
+        color: #445464;
+      }
+
+      & p{
+        font-size: 1.3rem;
+        color: #445464;
+        & span{
+          color: #f9af6e;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px){
+  .hours{
+    padding: 50px 0;
+    & .hoursWrapper{
+      width: 60%;
+      margin-left: 5%;
+      & .hoursWrapper__details{
+        & > div{
+          padding: 0px 10px;
+          & > p{
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px){
+  .hours{
+    background-size: cover;
+    & .hoursWrapper{
+      margin-left: 2%;
+      width: 90%;
+    }
+  }
+}

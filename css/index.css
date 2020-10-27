@@ -712,7 +712,7 @@ footer {
 .contact {
   width: 100vw;
   overflow: hidden;
-  padding: 50px 0;
+  padding: 100px 0;
   background-image: url("../assets/images/fdoFooter.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat; }
@@ -784,9 +784,132 @@ footer {
 @media screen and (max-width: 450px) {
   .contact {
     padding-left: 0; }
-    .contact .contactWrapper .contactWrapper__elements {
-      padding-left: 5%;
-      width: 95%; } }
+    .contact .contactWrapper {
+      margin: 0; }
+      .contact .contactWrapper .contactWrapper__elements {
+        padding-left: 2%;
+        width: 95%; } }
+
+.hours {
+  width: 100vw;
+  padding: 150px 0;
+  background-image: url("../assets/images/horariosLudoteca.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  overflow: hidden; }
+  .hours .hoursWrapper {
+    width: 50%;
+    margin-left: 10%; }
+    .hours .hoursWrapper .hoursWrapper__hero {
+      font-size: 3rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+      color: #445464;
+      margin: 0;
+      margin-bottom: 50px; }
+      .hours .hoursWrapper .hoursWrapper__hero img {
+        width: 80px;
+        height: 80px;
+        margin-right: 20px; }
+    .hours .hoursWrapper .hoursWrapper__details {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 15px;
+      grid-row-gap: 15px;
+      margin-bottom: 80px; }
+      .hours .hoursWrapper .hoursWrapper__details > div {
+        padding: 0px 20px; }
+        .hours .hoursWrapper .hoursWrapper__details > div > p {
+          color: white;
+          font-size: 1.3rem;
+          font-weight: bold; }
+      .hours .hoursWrapper .hoursWrapper__details .hoursWrapper__details-item1,
+      .hours .hoursWrapper .hoursWrapper__details .hoursWrapper__details-item3 {
+        background-color: #445464; }
+      .hours .hoursWrapper .hoursWrapper__details .hoursWrapper__details-item2,
+      .hours .hoursWrapper .hoursWrapper__details .hoursWrapper__details-item4 {
+        background-color: #77a4dc; }
+    .hours .hoursWrapper .hoursWrapper__aditional h2 {
+      font-size: 2rem;
+      color: #445464; }
+    .hours .hoursWrapper .hoursWrapper__aditional p {
+      font-size: 1.3rem;
+      color: #445464; }
+      .hours .hoursWrapper .hoursWrapper__aditional p span {
+        color: #f9af6e; }
+
+@media screen and (max-width: 950px) {
+  .hours {
+    padding: 50px 0; }
+    .hours .hoursWrapper {
+      width: 60%;
+      margin-left: 5%; }
+      .hours .hoursWrapper .hoursWrapper__details > div {
+        padding: 0px 10px; }
+        .hours .hoursWrapper .hoursWrapper__details > div > p {
+          color: white;
+          font-size: 1rem;
+          font-weight: bold; } }
+
+@media screen and (max-width: 650px) {
+  .hours {
+    background-size: cover; }
+    .hours .hoursWrapper {
+      margin-left: 2%;
+      width: 90%; } }
+
+.ludotecaImg {
+  width: 100vw;
+  padding: 50px 0;
+  background-color: #445464;
+  overflow: hidden; }
+  .ludotecaImg .ludutecaImgWrapper {
+    width: 80%;
+    margin-left: 10%; }
+    .ludotecaImg .ludutecaImgWrapper .ludutecaImgWrapper__title {
+      text-align: center;
+      color: white;
+      font-size: 2rem; }
+    .ludotecaImg .ludutecaImgWrapper .ludutecaImgWrapper__subtitle {
+      color: white;
+      text-align: center;
+      font-size: 1.5rem; }
+    .ludotecaImg .ludutecaImgWrapper .ludutecaImgWrapper__galery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-column-gap: 15px;
+      grid-row-gap: 15px; }
+      .ludotecaImg .ludutecaImgWrapper .ludutecaImgWrapper__galery > .item img {
+        width: 100%;
+        height: 100%;
+        cursor: pointer; }
+        .ludotecaImg .ludutecaImgWrapper .ludutecaImgWrapper__galery > .item img:hover {
+          transition-duration: 0.5s;
+          transform: scale(1.2); }
+
+@media screen and (max-width: 1000px) {
+  .ludotecaImg {
+    padding: 20px 0; }
+    .ludotecaImg .ludutecaImgWrapper .ludutecaImgWrapper__title {
+      margin-top: 0; }
+    .ludotecaImg .ludutecaImgWrapper .ludutecaImgWrapper__galery {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(6, 1fr); } }
+
+@media screen and (max-width: 550px) {
+  .ludotecaImg .ludutecaImgWrapper {
+    width: 85%;
+    margin-left: 5%; }
+    .ludotecaImg .ludutecaImgWrapper .ludutecaImgWrapper__galery {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(12, 1fr); }
+      .ludotecaImg .ludutecaImgWrapper .ludutecaImgWrapper__galery > .item > img:hover {
+        transform: scale(1.05); } }
 
 body {
   margin: 0;
