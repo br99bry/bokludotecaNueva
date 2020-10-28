@@ -341,14 +341,17 @@ footer {
 
 @media screen and (max-width: 580px) {
   .about .aboutWrapper {
-    width: 90%; }
+    width: 90%;
+    margin: 0;
+    margin-left: 2%; }
     .about .aboutWrapper .aboutWrapper__item1 {
       margin-top: 50px;
       width: 120px; }
     .about .aboutWrapper .aboutWrapper__item2 {
       font-size: 0.8rem;
       margin: 20px 0;
-      width: 90%; }
+      width: 100%;
+      text-align: left; }
     .about .aboutWrapper .aboutWrapper__item3 {
       margin-bottom: 50px;
       width: 50px;
@@ -701,8 +704,10 @@ footer {
 
 @media screen and (max-width: 400px) {
   .cafeteriaHome .cafeteriaHomeWrapper {
-    width: 85%;
-    flex-direction: column; }
+    width: 90%;
+    flex-direction: column;
+    margin: 0;
+    margin-left: 2%; }
     .cafeteriaHome .cafeteriaHomeWrapper .cafeteriaHomeWrapper__video {
       width: 100%;
       padding: 0;
@@ -992,10 +997,15 @@ footer {
     width: 80%; } }
 
 @media screen and (max-width: 505px) {
-  .packs .packsWrapper .packsWrapper__title h2 {
-    font-size: 1.5rem; }
-  .packs .packsWrapper .packsWrapper__content {
-    width: 90%; } }
+  .packs {
+    justify-content: flex-start; }
+    .packs .packsWrapper {
+      margin-left: 5%;
+      width: 85%; }
+      .packs .packsWrapper .packsWrapper__title h2 {
+        font-size: 1.5rem; }
+      .packs .packsWrapper .packsWrapper__content {
+        width: 100%; } }
 
 .workingSpace {
   width: 100vw;
@@ -1062,21 +1072,24 @@ footer {
     font-size: 1.2rem; } }
 
 @media screen and (max-width: 750px) {
-  .workingSpace .workingSpaceWrapper {
-    flex-direction: column; }
-    .workingSpace .workingSpaceWrapper .workingSpace__details {
-      width: 100%; }
-      .workingSpace .workingSpaceWrapper .workingSpace__details .workingSpace__details-title {
-        margin-bottom: 10px; }
-        .workingSpace .workingSpaceWrapper .workingSpace__details .workingSpace__details-title > h2 {
-          font-size: 1.5rem; }
-        .workingSpace .workingSpaceWrapper .workingSpace__details .workingSpace__details-title > img {
-          width: 60px; }
-      .workingSpace .workingSpaceWrapper .workingSpace__details .workingSpace__details-description > p {
-        font-size: 1.2rem; }
-    .workingSpace .workingSpaceWrapper .workingSpace__decorate {
-      width: 80%;
-      margin-top: 50px; } }
+  .workingSpace {
+    justify-content: flex-start; }
+    .workingSpace .workingSpaceWrapper {
+      margin-left: 2%;
+      flex-direction: column; }
+      .workingSpace .workingSpaceWrapper .workingSpace__details {
+        width: 100%; }
+        .workingSpace .workingSpaceWrapper .workingSpace__details .workingSpace__details-title {
+          margin-bottom: 10px; }
+          .workingSpace .workingSpaceWrapper .workingSpace__details .workingSpace__details-title > h2 {
+            font-size: 1.5rem; }
+          .workingSpace .workingSpaceWrapper .workingSpace__details .workingSpace__details-title > img {
+            width: 60px; }
+        .workingSpace .workingSpaceWrapper .workingSpace__details .workingSpace__details-description > p {
+          font-size: 1.2rem; }
+      .workingSpace .workingSpaceWrapper .workingSpace__decorate {
+        width: 80%;
+        margin-top: 50px; } }
 
 body {
   margin: 0;

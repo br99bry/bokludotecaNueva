@@ -114,8 +114,10 @@
 
 @media screen and (max-width: 505px){
   .packs{
+    justify-content: flex-start;
     & .packsWrapper{
-      
+      margin-left: 5%;
+      width: 85%;
       & .packsWrapper__title{
         & h2{
           font-size: 1.5rem;
@@ -123,7 +125,7 @@
       }
 
       & .packsWrapper__content{
-        width: 90%;
+        width: 100%;
       }
 
     }

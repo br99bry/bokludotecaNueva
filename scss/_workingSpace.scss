@@ -85,7 +85,9 @@
 
 @media screen and (max-width: 750px){
   .workingSpace{
+    justify-content: flex-start;
     & .workingSpaceWrapper{
+      margin-left: 2%;
       flex-direction: column;
       & .workingSpace__details{
         width: 100%;

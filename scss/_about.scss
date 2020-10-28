@@ -71,6 +71,8 @@
   .about{
     & .aboutWrapper{
       width: 90%;
+      margin: 0;
+      margin-left: 2%;
       & .aboutWrapper__item1{
         margin-top: 50px;
         width: 120px;
@@ -79,7 +81,8 @@
       & .aboutWrapper__item2{
         font-size: 0.8rem;
         margin: 20px 0;
-        width: 90%;
+        width: 100%;
+        text-align: left;
       }
 
       & .aboutWrapper__item3{
