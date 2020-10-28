@@ -113,6 +113,11 @@
       & .contactWrapper__elements{
         padding-left: 2%;
         width: 95%;
+        & .contactWrapper__elements-adress{
+          & > p{
+            font-size: 1.2rem;
+          }
+        }
       }
     }
   }

@@ -603,6 +603,7 @@ footer {
         flex-direction: column; } }
 
 .cafeteriaHome {
+  padding: 30px 0;
   background-color: #445464;
   width: 100vw;
   overflow: hidden; }
@@ -788,7 +789,9 @@ footer {
       margin: 0; }
       .contact .contactWrapper .contactWrapper__elements {
         padding-left: 2%;
-        width: 95%; } }
+        width: 95%; }
+        .contact .contactWrapper .contactWrapper__elements .contactWrapper__elements-adress > p {
+          font-size: 1.2rem; } }
 
 .hours {
   width: 100vw;
@@ -993,6 +996,87 @@ footer {
     font-size: 1.5rem; }
   .packs .packsWrapper .packsWrapper__content {
     width: 90%; } }
+
+.workingSpace {
+  width: 100vw;
+  padding: 50px 0px;
+  background-color: #ff9c6b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row; }
+  .workingSpace .workingSpaceWrapper {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
+    .workingSpace .workingSpaceWrapper .workingSpace__details {
+      width: 45%; }
+      .workingSpace .workingSpaceWrapper .workingSpace__details .workingSpace__details-title {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: row;
+        color: white;
+        font-weight: bold;
+        font-size: 1.7rem;
+        margin-bottom: 50px; }
+        .workingSpace .workingSpaceWrapper .workingSpace__details .workingSpace__details-title > img {
+          margin-right: 30px; }
+      .workingSpace .workingSpaceWrapper .workingSpace__details .workingSpace__details-description {
+        width: 100%;
+        margin-bottom: 30px; }
+        .workingSpace .workingSpaceWrapper .workingSpace__details .workingSpace__details-description > p {
+          color: white;
+          font-size: 1.5rem; }
+      .workingSpace .workingSpaceWrapper .workingSpace__details .workingSpace__details-button > button {
+        padding: 15px 20px;
+        background-color: #719cd1;
+        outline: none;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.1)); }
+        .workingSpace .workingSpaceWrapper .workingSpace__details .workingSpace__details-button > button a {
+          text-decoration: none;
+          color: white;
+          font-size: 1rem; }
+    .workingSpace .workingSpaceWrapper .workingSpace__decorate {
+      width: 55%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row; }
+      .workingSpace .workingSpaceWrapper .workingSpace__decorate > img {
+        width: 80%; }
+
+@media screen and (max-width: 1150px) {
+  .workingSpace .workingSpaceWrapper .workingSpace__details .workingSpace__details-title {
+    margin-bottom: 10px; }
+    .workingSpace .workingSpaceWrapper .workingSpace__details .workingSpace__details-title > h2 {
+      font-size: 1.5rem; }
+    .workingSpace .workingSpaceWrapper .workingSpace__details .workingSpace__details-title > img {
+      width: 60px; }
+  .workingSpace .workingSpaceWrapper .workingSpace__details .workingSpace__details-description > p {
+    font-size: 1.2rem; } }
+
+@media screen and (max-width: 750px) {
+  .workingSpace .workingSpaceWrapper {
+    flex-direction: column; }
+    .workingSpace .workingSpaceWrapper .workingSpace__details {
+      width: 100%; }
+      .workingSpace .workingSpaceWrapper .workingSpace__details .workingSpace__details-title {
+        margin-bottom: 10px; }
+        .workingSpace .workingSpaceWrapper .workingSpace__details .workingSpace__details-title > h2 {
+          font-size: 1.5rem; }
+        .workingSpace .workingSpaceWrapper .workingSpace__details .workingSpace__details-title > img {
+          width: 60px; }
+      .workingSpace .workingSpaceWrapper .workingSpace__details .workingSpace__details-description > p {
+        font-size: 1.2rem; }
+    .workingSpace .workingSpaceWrapper .workingSpace__decorate {
+      width: 80%;
+      margin-top: 50px; } }
 
 body {
   margin: 0;

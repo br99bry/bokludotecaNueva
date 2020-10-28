@@ -1,0 +1,113 @@
+.workingSpace{
+  // border: 1px solid red;
+  width: 100vw;
+  padding: 50px 0px;
+  background-color: #ff9c6b;
+  @include flexbox-basic();
+  & .workingSpaceWrapper{
+    // border: 1px solid blue;
+    width: 90%;
+    @include flexbox-basic();
+
+    & .workingSpace__details{
+      // border: 1px solid blue;
+      width: 45%;
+      & .workingSpace__details-title{
+        @include flexbox-basic(flex-start);
+        color: white;
+        font-weight: bold;
+        font-size: 1.7rem;
+        margin-bottom: 50px;
+        & > img{
+          margin-right: 30px;
+        }
+      }
+      & .workingSpace__details-description{
+        // border: 1px solid green;
+        width: 100%;
+        margin-bottom: 30px;
+        & > p{
+          color: white;
+          font-size: 1.5rem;
+        }
+      }
+      & .workingSpace__details-button{
+        & > button{
+          padding: 15px 20px;
+          background-color: #719cd1;
+          outline: none;
+          border: none;
+          border-radius: 25px;
+          cursor: pointer;
+          background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.1) 50%,rgba(0,0,0,.1));
+          & a{
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    & .workingSpace__decorate{
+      // border: 1px solid red;
+      width: 55%;
+      @include flexbox-basic();
+      & > img{
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1150px){
+  .workingSpace{
+    & .workingSpaceWrapper{
+      & .workingSpace__details{
+        & .workingSpace__details-title{
+          margin-bottom: 10px;
+          & > h2{
+            font-size: 1.5rem;
+          }
+          & > img{
+            width: 60px;
+          }
+        }
+        & .workingSpace__details-description{
+          & > p{
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px){
+  .workingSpace{
+    & .workingSpaceWrapper{
+      flex-direction: column;
+      & .workingSpace__details{
+        width: 100%;
+        & .workingSpace__details-title{
+          margin-bottom: 10px;
+          & > h2{
+            font-size: 1.5rem;
+          }
+          & > img{
+            width: 60px;
+          }
+        }
+        & .workingSpace__details-description{
+          & > p{
+            font-size: 1.2rem;
+          }
+        }
+      }
+      & .workingSpace__decorate{
+        width: 80%;
+        margin-top: 50px;
+      }
+    }
+  }
+}
